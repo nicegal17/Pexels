@@ -1,0 +1,79 @@
+.app-header {
+  background-color: #232a34;
+  position: fixed;
+  left: 0;
+  right: 0;
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.15rem;
+  z-index: 30;
+
+  .app-header-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2rem;
+    .fa {
+      color: #05a081;
+      margin-right: 16px;
+    }
+  }
+
+  .app-header-logo-title {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+  }
+
+  .app-header-search {
+    min-width: 750px;
+    width: 100%;
+
+    .search-container {
+      display: flex;
+      background-color: #fff;
+      border-radius: 6px;
+      z-index: 1;
+    }
+
+    input {
+      flex: 1;
+      border: none;
+      background-color: transparent;
+      padding: 0.9rem 1.25rem;
+    }
+  }
+
+  .navigation-item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+    justify-content: space-evenly;
+
+    li {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 2rem;
+    }
+
+    .btn-upload {
+      background-color: #05a081;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 0.8rem 2rem;
+    }
+  }
+}
+

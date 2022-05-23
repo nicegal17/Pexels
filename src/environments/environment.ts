@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl: "https://api.pexels.com/v1/",
+  videoBaseURL: "https://api.pexels.com/videos/"
 };
 
 /*

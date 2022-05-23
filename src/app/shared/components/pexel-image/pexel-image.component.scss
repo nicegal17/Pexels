@@ -1,0 +1,18 @@
+.pexel-photo-container {
+  position: relative;
+  cursor: pointer;
+  margin: 0.3rem;
+
+  &:hover {
+    app-user-info-container {
+      display: block;
+    }
+  }
+
+  app-user-info-container {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}

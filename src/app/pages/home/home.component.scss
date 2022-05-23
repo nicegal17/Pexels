@@ -1,0 +1,15 @@
+.home-page {
+  max-width: 1850px;
+  flex: 1;
+  padding: 2rem;
+
+  h3 {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+
+  .masonry-item {
+    position: relative;
+  }
+}

@@ -1,0 +1,15 @@
+<app-search-jumbotron></app-search-jumbotron>
+<app-navbar-menu></app-navbar-menu>
+<div class="container-fluid">
+  <div class="row gx-3">
+    <h3>Trending Free Stock Videos</h3>
+    <div class="col-3 col-lg-3" *ngFor="let video of videosArray">
+      <video class="video" #videoPlayer muted preload="none" controls [poster]="video.image" [ngStyle]="{
+        width: '100%',
+        height: video.video_files[3].height
+      }">
+        <source src="{{video.video_files[3].link}}" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>

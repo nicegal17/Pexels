@@ -1,0 +1,12 @@
+<app-search-jumbotron></app-search-jumbotron>
+<app-navbar-menu></app-navbar-menu>
+<div class="home-page">
+  <h3>Free Stock Photos</h3>
+  <div>
+    <ngx-masonry #masonry [options]="myOptions" [ordered]="true">
+      <div ngxMasonryItem class="masonry-item" *ngFor="let photo of photosArray" style="width: 20%;">
+        <app-pexel-image [photo]="photo"></app-pexel-image>
+      </div>
+    </ngx-masonry>
+  </div>
+</div>

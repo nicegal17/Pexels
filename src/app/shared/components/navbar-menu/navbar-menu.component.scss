@@ -1,0 +1,34 @@
+.inline-tabs {
+  display: block;
+  text-align: center;
+
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 8%);
+
+  .tab-name {
+    font-size: 15px;
+    line-height: 4px;
+    font-weight: 600;
+    color: #5e5e5e;
+
+    letter-spacing: 0.4px;
+    display: inline-flex;
+    padding: 1.25rem;
+
+    &:hover,
+    &:active {
+      color: #0064f9;
+    }
+
+    &.active {
+      color: #0064f9;
+
+      border-bottom: 0.22rem solid #0064f9;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
