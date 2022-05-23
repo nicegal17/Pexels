@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PexelImageComponent } from './pexel-image.component';
 
@@ -6,7 +6,7 @@ describe('PexelImageComponent', () => {
   let component: PexelImageComponent;
   let fixture: ComponentFixture<PexelImageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ PexelImageComponent ]
     })
